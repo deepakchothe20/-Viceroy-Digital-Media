@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery | Viceroy Digital Media | Digital Marketing & Political Campaign Work in Pune</title>
+<meta name="description" content="Explore Viceroy Digital Media's gallery — digital marketing campaigns, political activities, ground management operations, brand promotion events, and documentary projects in Pune."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-primary": "#442c00", "gold-dark": "#A26E1C", "gold-light": "#F7D070",
+          "bg-deep": "#010A26", "bg-indigo": "#0A245C", "primary": "#fbbb54",
+          "on-surface": "#ece1d5", "text-muted": "#8A99B8", "outline-variant": "#504536",
+        },
+        spacing: { "gutter": "24px", "container-max": "1280px", "section-gap": "100px" },
+        fontFamily: { "display": ["Montserrat"], "body": ["Hanken Grotesk"] },
+      },
+    },
+  }
+</script>
+<style>
+  body { background-color: #010A26; color: #ece1d5; -webkit-font-smoothing: antialiased; }
+  .gold-gradient-text { background: linear-gradient(135deg, #F7D070 0%, #A26E1C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .glass-nav { backdrop-filter: blur(20px); background: rgba(1,10,38,0.85); }
+  #mobile-menu { background: rgba(1,10,38,0.98); backdrop-filter: blur(24px); transition: opacity 0.35s ease, transform 0.35s ease; opacity: 0; transform: translateY(-16px); pointer-events: none; }
+  #mobile-menu.menu-open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  #mobile-menu.menu-hidden { display: none !important; }
+  #mobile-menu a { font-size: 1.1rem; letter-spacing: 0.12em; font-weight: 700; color: #ece1d5; transition: color 0.2s ease; }
+  #mobile-menu a:hover { color: #fbbb54; }
+  .gallery-item { position: relative; overflow: hidden; border: 1px solid rgba(80,69,54,0.3); border-radius: 16px; cursor: pointer; }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+  .gallery-item:hover img { transform: scale(1.08); }
+  .gallery-item .overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(1,10,38,0.9) 0%, transparent 60%); opacity: 0; transition: opacity 0.3s ease; display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; }
+  .gallery-item:hover .overlay { opacity: 1; }
+  .gallery-item:hover { border-color: rgba(162,110,28,0.5); }
+  .filter-btn { background: rgba(10,36,92,0.4); border: 1px solid rgba(80,69,54,0.3); transition: all 0.3s ease; }
+  .filter-btn.active, .filter-btn:hover { background: rgba(251,187,84,0.15); border-color: rgba(251,187,84,0.5); color: #fbbb54; }
+  .low-poly { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M0 0l50 50L100 0z' fill='%23F7D070' fill-opacity='0.025'/%3E%3C/svg%3E"); }
+
+  /* Placeholder gallery tiles with gradient backgrounds */
+  .placeholder-tile { width: 100%; height: 100%; min-height: 240px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
+  .pt-digital { background: linear-gradient(135deg, #0A245C 0%, #010A26 100%); }
+  .pt-political { background: linear-gradient(135deg, #1a0505 0%, #3d0a00 50%, #010A26 100%); }
+  .pt-ground { background: linear-gradient(135deg, #051a05 0%, #0a3d0a 50%, #010A26 100%); }
+  .pt-brand { background: linear-gradient(135deg, #1a1a05 0%, #3d3d0a 50%, #010A26 100%); }
+  .pt-documentary { background: linear-gradient(135deg, #0A245C 0%, #1a0a3d 100%); }
+  .pt-team { background: linear-gradient(135deg, #1a0a0a 0%, #010A26 100%); }
+</style>
+</head>
+<body class="font-body overflow-x-hidden selection:bg-primary selection:text-on-primary">
+
+<!-- NAV -->
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/20">
+  <nav class="max-w-container-max mx-auto px-gutter py-4 flex justify-between items-center">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="logo.png" alt="Viceroy Logo" class="h-9 w-9 object-contain" style="mix-blend-mode:screen;">
+      <span class="font-display font-bold text-xl tracking-tight text-primary">VICEROY</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="index.html">HOME</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="about.html">ABOUT</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="services.html">SERVICES</a>
+      <a class="text-xs font-bold tracking-widest text-primary border-b-2 border-primary pb-1" href="gallery.html">GALLERY</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="testimonials.html">TESTIMONIALS</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="contact.html">CONTACT</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="contact.html" class="hidden md:block bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-xs tracking-widest px-5 py-3 rounded-lg hover:scale-105 transition-all shadow-lg shadow-gold-dark/20">Get Started</a>
+      <button id="mobile-menu-btn" class="md:hidden text-primary p-2"><span class="material-symbols-outlined text-3xl">menu</span></button>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="menu-hidden fixed inset-0 z-[60] flex flex-col items-center justify-center gap-7">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-primary p-2 hover:rotate-90 transition-transform duration-300"><span class="material-symbols-outlined text-4xl">close</span></button>
+    <a href="index.html">HOME</a><a href="about.html">ABOUT</a><a href="services.html">SERVICES</a>
+    <a href="gallery.html">GALLERY</a><a href="testimonials.html">TESTIMONIALS</a><a href="contact.html">CONTACT</a>
+    <a href="contact.html" class="mt-4 bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-xs tracking-widest px-8 py-4 rounded-lg">Get Free Consultation</a>
+  </div>
+</header>
+
+<main class="pt-20 overflow-x-hidden">
+
+  <!-- HERO -->
+  <section class="relative py-24 px-gutter text-center overflow-hidden">
+    <div class="absolute inset-0 low-poly pointer-events-none opacity-60"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-5">OUR WORK</span>
+      <h1 class="font-display font-bold text-5xl md:text-6xl text-white mb-6 leading-tight">Our <span class="gold-gradient-text">Gallery</span></h1>
+      <p class="text-text-muted text-xl max-w-3xl mx-auto leading-relaxed">Explore our work across digital marketing campaigns, political activities, ground management operations, brand promotion events, documentary projects, and team activities.</p>
+    </div>
+  </section>
+
+  <!-- FILTER TABS -->
+  <section class="px-gutter max-w-container-max mx-auto mb-12">
+    <div class="flex flex-wrap justify-center gap-3" id="filter-tabs">
+      <button onclick="filterGallery('all', this)" class="filter-btn active font-bold text-xs tracking-widest px-5 py-2.5 rounded-full text-gold-light">ALL WORK</button>
+      <button onclick="filterGallery('digital', this)" class="filter-btn font-bold text-xs tracking-widest px-5 py-2.5 rounded-full text-on-surface/70">DIGITAL MARKETING</button>
+      <button onclick="filterGallery('political', this)" class="filter-btn font-bold text-xs tracking-widest px-5 py-2.5 rounded-full text-on-surface/70">POLITICAL CAMPAIGNS</button>
+      <button onclick="filterGallery('ground', this)" class="filter-btn font-bold text-xs tracking-widest px-5 py-2.5 rounded-full text-on-surface/70">GROUND MANAGEMENT</button>
+      <button onclick="filterGallery('brand', this)" class="filter-btn font-bold text-xs tracking-widest px-5 py-2.5 rounded-full text-on-surface/70">BRAND PROMOTION</button>
+      <button onclick="filterGallery('documentary', this)" class="filter-btn font-bold text-xs tracking-widest px-5 py-2.5 rounded-full text-on-surface/70">DOCUMENTARY</button>
+      <button onclick="filterGallery('team', this)" class="filter-btn font-bold text-xs tracking-widest px-5 py-2.5 rounded-full text-on-surface/70">TEAM ACTIVITIES</button>
+    </div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <section class="py-8 px-gutter max-w-container-max mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="gallery-grid">
+
+      <!-- Digital Marketing 1 -->
+      <div class="gallery-item h-64 digital" data-category="digital">
+        <div class="placeholder-tile pt-digital">
+          <span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings:'FILL' 1;">insights</span>
+          <p class="font-display font-bold text-white text-center px-4">Social Media Campaign</p>
+        </div>
+        <div class="overlay">
+          <span class="text-xs font-bold tracking-widest text-gold-light">DIGITAL MARKETING</span>
+          <p class="font-bold text-white mt-1">Social Media Growth Campaign</p>
+          <p class="text-text-muted text-sm">Meta Ads | 300% reach increase</p>
+        </div>
+      </div>
+
+      <!-- Political 1 - tall -->
+      <div class="gallery-item h-64 sm:h-auto sm:row-span-2 political" data-category="political" style="min-height: 530px;">
+        <div class="placeholder-tile pt-political h-full">
+          <span class="material-symbols-outlined text-primary text-6xl" style="font-variation-settings:'FILL' 1;">how_to_vote</span>
+          <p class="font-display font-bold text-white text-center px-4 text-xl">Election Campaign Management</p>
+          <p class="text-text-muted text-center px-6 text-sm">Complete end-to-end political campaign</p>
+        </div>
+        <div class="overlay">
+          <span class="text-xs font-bold tracking-widest text-gold-light">POLITICAL CAMPAIGN</span>
+          <p class="font-bold text-white mt-1">Pune MLA Election Campaign</p>
+          <p class="text-text-muted text-sm">1200+ Booths | 50L+ Voters Reached</p>
+        </div>
+      </div>
+
+      <!-- Brand 1 -->
+      <div class="gallery-item h-64 brand" data-category="brand">
+        <div class="placeholder-tile pt-brand">
+          <span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings:'FILL' 1;">campaign</span>
+          <p class="font-display font-bold text-white text-center px-4">Brand Promotion Event</p>
+        </div>
+        <div class="overlay">
+          <span class="text-xs font-bold tracking-widest text-gold-light">BRAND PROMOTION</span>
+          <p class="font-bold text-white mt-1">Leader Branding Campaign</p>
+          <p class="text-text-muted text-sm">Digital + Hoarding | Pune</p>
+        </div>
+      </div>
+
+      <!-- Ground 1 -->
+      <div class="gallery-item h-64 ground" data-category="ground">
+        <div class="placeholder-tile pt-ground">
+          <span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings:'FILL' 1;">groups</span>
+          <p class="font-display font-bold text-white text-center px-4">Ground Operations</p>
+        </div>
+        <div class="overlay">
+          <span class="text-xs font-bold tracking-widest text-gold-light">GROUND MANAGEMENT</span>
+          <p class="font-bold text-white mt-1">Door-to-Door Voter Outreach</p>
+          <p class="text-text-muted text-sm">500+ Volunteers | 3 Constituencies</p>
+        </div>
+      </div>
+
+      <!-- Digital 2 -->
+      <div class="gallery-item h-64 digital" data-category="digital">
+        <div class="placeholder-tile pt-digital">
+          <span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings:'FILL' 1;">ads_click</span>
+          <p class="font-display font-bold text-white text-center px-4">Google Ads Campaign</p>
+        </div>
+        <div class="overlay">
+          <span class="text-xs font-bold tracking-widest text-gold-light">DIGITAL MARKETING</span>
+          <p class="font-bold text-white mt-1">Google Ads — Lead Generation</p>
+          <p class="text-text-muted text-sm">3x Leads | 60% Lower CPL</p>
+        </div>
+      </div>
+
+      <!-- Documentary 1 - wide -->
+      <div class="gallery-item h-64 lg:col-span-2 documentary" data-category="documentary">
+        <div class="placeholder-tile pt-documentary">
+          <span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings:'FILL' 1;">videocam</span>
+          <p class="font-display font-bold text-white text-center px-4">Political Documentary Production</p>
+          <p class="text-text-muted text-center px-6 text-sm">Professional film showcasing a leader's development works and vision</p>
+        </div>
+        <div class="overlay">
+          <span class="text-xs font-bold tracking-widest text-gold-light">DOCUMENTARY</span>
+          <p class="font-bold text-white mt-1">Political Leader's Journey — Documentary Film</p>
+          <p class="text-text-muted text-sm">Production | Editing | Distribution</p>
+        </div>
+      </div>
+
+      <!-- Brand 2 -->
+      <div class="gallery-item h-64 brand" data-category="brand">
+        <div class="placeholder-tile pt-brand">
+          <span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings:'FILL' 1;">emoji_events</span>
+          <p class="font-display font-bold text-white text-center px-4">Achievement Showcase</p>
+        </div>
+        <div class="overlay">
+          <span class="text-xs font-bold tracking-widest text-gold-light">BRAND PROMOTION</span>
+          <p class="font-bold text-white mt-1">Corporate Achievement Portfolio</p>
+          <p class="text-text-muted text-sm">Photo + Video | Brand Story</p>
+        </div>
+      </div>
+
+      <!-- Political 2 -->
+      <div class="gallery-item h-64 political" data-category="political">
+        <div class="placeholder-tile pt-political">
+          <span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings:'FILL' 1;">record_voice_over</span>
+          <p class="font-display font-bold text-white text-center px-4">Political Rally Coverage</p>
+        </div>
+        <div class="overlay">
+          <span class="text-xs font-bold tracking-widest text-gold-light">POLITICAL CAMPAIGN</span>
+          <p class="font-bold text-white mt-1">Constituency Rally — Live Coverage</p>
+          <p class="text-text-muted text-sm">10,000+ Attendees | Maharashtra</p>
+        </div>
+      </div>
+
+      <!-- Team -->
+      <div class="gallery-item h-64 team" data-category="team">
+        <div class="placeholder-tile pt-team">
+          <span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings:'FILL' 1;">diversity_3</span>
+          <p class="font-display font-bold text-white text-center px-4">Viceroy Team</p>
+        </div>
+        <div class="overlay">
+          <span class="text-xs font-bold tracking-widest text-gold-light">TEAM ACTIVITIES</span>
+          <p class="font-bold text-white mt-1">Team Strategy Session</p>
+          <p class="text-text-muted text-sm">Planning | Collaboration | Execution</p>
+        </div>
+      </div>
+
+      <!-- Ground 2 -->
+      <div class="gallery-item h-64 ground" data-category="ground">
+        <div class="placeholder-tile pt-ground">
+          <span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings:'FILL' 1;">location_city</span>
+          <p class="font-display font-bold text-white text-center px-4">Booth Day Operations</p>
+        </div>
+        <div class="overlay">
+          <span class="text-xs font-bold tracking-widest text-gold-light">GROUND MANAGEMENT</span>
+          <p class="font-bold text-white mt-1">Polling Day Booth Management</p>
+          <p class="text-text-muted text-sm">1000+ Booths | Pune & Maharashtra</p>
+        </div>
+      </div>
+
+      <!-- Digital 3 -->
+      <div class="gallery-item h-64 digital" data-category="digital">
+        <div class="placeholder-tile pt-digital">
+          <span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings:'FILL' 1;">edit_note</span>
+          <p class="font-display font-bold text-white text-center px-4">Content Creation</p>
+        </div>
+        <div class="overlay">
+          <span class="text-xs font-bold tracking-widest text-gold-light">DIGITAL MARKETING</span>
+          <p class="font-bold text-white mt-1">Social Media Content Production</p>
+          <p class="text-text-muted text-sm">Reels | Graphics | Strategy</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-section-gap px-gutter">
+    <div class="max-w-4xl mx-auto bg-bg-indigo/30 border border-gold-dark/20 rounded-3xl p-12 md:p-20 text-center relative overflow-hidden low-poly">
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">Want to See Your Work<br/>Here?</h2>
+      <p class="text-text-muted text-lg mb-10 max-w-2xl mx-auto">Partner with Viceroy Digital Media and let us create your next impactful campaign, documentary, or digital marketing success story.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+        <a href="contact.html" class="w-full sm:w-auto bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-sm tracking-widest px-10 py-5 rounded-xl shadow-xl shadow-gold-dark/30 hover:scale-105 transition-all text-center">Start a Project</a>
+        <a href="services.html" class="w-full sm:w-auto border-2 border-gold-dark/50 text-gold-light font-bold text-sm tracking-widest px-10 py-5 rounded-xl hover:bg-gold-dark/10 transition-all text-center">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- WhatsApp FAB -->
+<div class="fixed bottom-8 right-8 z-[60] group">
+  <div class="absolute right-full mr-4 bg-primary text-on-primary font-bold text-xs px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Chat on WhatsApp</div>
+  <a href="https://wa.me/919091110707" target="_blank" class="bg-primary hover:bg-gold-light text-on-primary p-4 rounded-full shadow-lg shadow-primary/30 block hover:scale-110 transition-all">
+    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">chat</span>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-bg-deep border-t border-outline-variant/20 pt-16 pb-8">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div class="md:col-span-2">
+        <a href="index.html" class="flex items-center gap-2 mb-5">
+          <img src="logo.png" alt="Viceroy Logo" class="h-8 w-8 object-contain" style="mix-blend-mode:screen;">
+          <span class="font-display font-bold text-xl text-primary">VICEROY</span>
+        </a>
+        <p class="text-text-muted text-sm leading-relaxed mb-6 max-w-sm">Viceroy Digital Media — Pune's full-service digital marketing & political consulting agency. Transforming brands, leaders, and campaigns through digital excellence.</p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/share/1Gsx22P6fb/" target="_blank" class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-text-muted hover:border-gold-light hover:text-gold-light transition-all"><span class="material-symbols-outlined text-sm">share</span></a>
+          <a href="https://www.instagram.com/viceroydigitalmedia" target="_blank" class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-text-muted hover:border-gold-light hover:text-gold-light transition-all"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
+          <a href="https://www.linkedin.com/company/109436697" target="_blank" class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-text-muted hover:border-gold-light hover:text-gold-light transition-all"><span class="material-symbols-outlined text-sm">work</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-xs tracking-widest text-white mb-6">QUICK LINKS</h4>
+        <ul class="space-y-3 text-sm text-text-muted">
+          <li><a href="about.html" class="hover:text-gold-light transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-gold-light transition-colors">Our Services</a></li>
+          <li><a href="gallery.html" class="hover:text-gold-light transition-colors">Gallery</a></li>
+          <li><a href="testimonials.html" class="hover:text-gold-light transition-colors">Testimonials</a></li>
+          <li><a href="contact.html" class="hover:text-gold-light transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-xs tracking-widest text-white mb-6">CONTACT</h4>
+        <ul class="space-y-3 text-sm text-text-muted">
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">call</span><a href="tel:+919091110707" class="hover:text-gold-light transition-colors">909 111 0707</a></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">mail</span><a href="mailto:info@viceroymedia.in" class="hover:text-gold-light transition-colors">info@viceroymedia.in</a></li>
+          <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">location_on</span><span>Pune, Maharashtra, India</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-outline-variant/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-text-muted text-xs">© 2026 Viceroy Digital Media. All rights reserved. | viceroymedia.in</p>
+      <p class="text-text-muted text-xs">Complete Digital Marketing · Political Strategy · Brand Promotion · Survey & Research · Campaign Management</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    function open() { menu.classList.remove('menu-hidden'); menu.getBoundingClientRect(); menu.classList.add('menu-open'); document.body.style.overflow = 'hidden'; }
+    function close() { menu.classList.remove('menu-open'); document.body.style.overflow = ''; setTimeout(() => menu.classList.add('menu-hidden'), 350); }
+    if (btn && closeBtn && menu) { btn.addEventListener('click', open); closeBtn.addEventListener('click', close); document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); }); }
+  });
+
+  function filterGallery(category, clickedBtn) {
+    // Update button states
+    document.querySelectorAll('#filter-tabs button').forEach(btn => {
+      btn.classList.remove('active');
+      btn.classList.remove('text-gold-light');
+      btn.classList.add('text-on-surface/70');
+    });
+    clickedBtn.classList.add('active', 'text-gold-light');
+    clickedBtn.classList.remove('text-on-surface/70');
+
+    // Filter items
+    const items = document.querySelectorAll('#gallery-grid > div');
+    items.forEach(item => {
+      if (category === 'all' || item.dataset.category === category) {
+        item.style.display = '';
+        item.style.opacity = '1';
+      } else {
+        item.style.display = 'none';
+        item.style.opacity = '0';
+      }
+    });
+  }
+</script>
+</body>
+</html>

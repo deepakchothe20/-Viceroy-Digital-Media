@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Viceroy Digital Media | Digital Marketing & Political Consulting Pune</title>
+<meta name="description" content="Learn about Viceroy Digital Media — Pune's dedicated digital marketing & political consulting agency. Innovative strategies, experienced professionals, and proven results."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-primary": "#442c00", "gold-dark": "#A26E1C", "gold-light": "#F7D070",
+          "bg-deep": "#010A26", "bg-indigo": "#0A245C", "primary": "#fbbb54",
+          "on-surface": "#ece1d5", "text-muted": "#8A99B8", "outline-variant": "#504536",
+          "surface-container": "#241f17",
+        },
+        spacing: { "gutter": "24px", "container-max": "1280px", "section-gap": "100px" },
+        fontFamily: { "display": ["Montserrat"], "body": ["Hanken Grotesk"] },
+      },
+    },
+  }
+</script>
+<style>
+  body { background-color: #010A26; color: #ece1d5; -webkit-font-smoothing: antialiased; }
+  .gold-gradient-text { background: linear-gradient(135deg, #F7D070 0%, #A26E1C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .glass-nav { backdrop-filter: blur(20px); background: rgba(1,10,38,0.85); }
+  .card { background: rgba(10,36,92,0.4); border: 1px solid rgba(80,69,54,0.3); transition: all 0.3s ease; }
+  .card:hover { border-color: rgba(162,110,28,0.5); transform: translateY(-4px); }
+  #mobile-menu { background: rgba(1,10,38,0.98); backdrop-filter: blur(24px); transition: opacity 0.35s ease, transform 0.35s ease; opacity: 0; transform: translateY(-16px); pointer-events: none; }
+  #mobile-menu.menu-open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  #mobile-menu.menu-hidden { display: none !important; }
+  #mobile-menu a { font-size: 1.1rem; letter-spacing: 0.12em; font-weight: 700; color: #ece1d5; transition: color 0.2s ease; }
+  #mobile-menu a:hover { color: #fbbb54; }
+  .low-poly { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M0 0l50 50L100 0z' fill='%23F7D070' fill-opacity='0.025'/%3E%3C/svg%3E"); }
+</style>
+</head>
+<body class="font-body overflow-x-hidden selection:bg-primary selection:text-on-primary">
+
+<!-- NAV -->
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/20">
+  <nav class="max-w-container-max mx-auto px-gutter py-4 flex justify-between items-center">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="logo.png" alt="Viceroy Logo" class="h-9 w-9 object-contain" style="mix-blend-mode:screen;">
+      <span class="font-display font-bold text-xl tracking-tight text-primary">VICEROY</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="index.html">HOME</a>
+      <a class="text-xs font-bold tracking-widest text-primary border-b-2 border-primary pb-1" href="about.html">ABOUT</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="services.html">SERVICES</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="gallery.html">GALLERY</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="testimonials.html">TESTIMONIALS</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="contact.html">CONTACT</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="contact.html" class="hidden md:block bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-xs tracking-widest px-5 py-3 rounded-lg hover:scale-105 transition-all shadow-lg shadow-gold-dark/20">Get Started</a>
+      <button id="mobile-menu-btn" class="md:hidden text-primary p-2"><span class="material-symbols-outlined text-3xl">menu</span></button>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="menu-hidden fixed inset-0 z-[60] flex flex-col items-center justify-center gap-7">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-primary p-2 hover:rotate-90 transition-transform duration-300"><span class="material-symbols-outlined text-4xl">close</span></button>
+    <a href="index.html">HOME</a><a href="about.html">ABOUT</a><a href="services.html">SERVICES</a>
+    <a href="gallery.html">GALLERY</a><a href="testimonials.html">TESTIMONIALS</a><a href="contact.html">CONTACT</a>
+    <a href="contact.html" class="mt-4 bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-xs tracking-widest px-8 py-4 rounded-lg">Get Free Consultation</a>
+  </div>
+</header>
+
+<main class="pt-20 overflow-x-hidden">
+
+  <!-- HERO -->
+  <section class="relative py-24 px-gutter text-center overflow-hidden">
+    <div class="absolute inset-0 low-poly pointer-events-none opacity-60"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-5">ABOUT US</span>
+      <h1 class="font-display font-bold text-5xl md:text-6xl text-white mb-6 leading-tight">Dedicated to <span class="gold-gradient-text">Delivering Results</span></h1>
+      <p class="text-text-muted text-xl max-w-3xl mx-auto leading-relaxed">Viceroy Digital Media is a full-service digital marketing and political consulting agency specializing in brand building, lead generation, campaign management, and digital growth strategies.</p>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section class="py-section-gap px-gutter max-w-container-max mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-5">WHO WE ARE</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-8 leading-tight">Innovative Marketing.<br/>Strategic Consulting.<br/>Real Results.</h2>
+        <p class="text-text-muted text-lg leading-relaxed mb-6">Viceroy Digital Media is dedicated to delivering innovative marketing solutions and strategic campaign management services. Our team combines creativity, technology, and data-driven insights to help brands and leaders achieve their goals.</p>
+        <p class="text-text-muted text-lg leading-relaxed mb-10">We help businesses, organizations, and political leaders establish a strong presence, connect with their audience, and achieve measurable results — whether online or on the ground.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="services.html" class="bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-sm tracking-widest px-8 py-4 rounded-xl hover:scale-105 transition-all shadow-lg shadow-gold-dark/20 text-center">Our Services</a>
+          <a href="contact.html" class="border-2 border-gold-dark/50 text-gold-light font-bold text-sm tracking-widest px-8 py-4 rounded-xl hover:bg-gold-dark/10 transition-all text-center">Get In Touch</a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="card rounded-2xl p-8 text-center">
+          <div class="font-display font-bold text-4xl text-gold-light mb-2">200+</div>
+          <div class="text-xs font-bold tracking-widest text-text-muted">CAMPAIGNS MANAGED</div>
+        </div>
+        <div class="card rounded-2xl p-8 text-center mt-6">
+          <div class="font-display font-bold text-4xl text-gold-light mb-2">50L+</div>
+          <div class="text-xs font-bold tracking-widest text-text-muted">AUDIENCE REACHED</div>
+        </div>
+        <div class="card rounded-2xl p-8 text-center">
+          <div class="font-display font-bold text-4xl text-gold-light mb-2">1000+</div>
+          <div class="text-xs font-bold tracking-widest text-text-muted">BOOTHS MANAGED</div>
+        </div>
+        <div class="card rounded-2xl p-8 text-center mt-6">
+          <div class="font-display font-bold text-4xl text-gold-light mb-2">100%</div>
+          <div class="text-xs font-bold tracking-widest text-text-muted">COMMITMENT</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION BANNER -->
+  <section class="py-20 px-gutter bg-gradient-to-r from-gold-dark/20 via-primary/10 to-gold-dark/20 border-y border-gold-dark/20">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="font-display font-bold text-2xl md:text-3xl text-white leading-relaxed italic">
+        "We help businesses, organizations, and political leaders establish a strong presence, connect with their audience, and achieve measurable results."
+      </p>
+      <div class="mt-8 flex justify-center gap-2 items-center">
+        <div class="h-0.5 w-12 bg-gold-dark/60"></div>
+        <span class="font-bold text-xs tracking-widest text-primary">THE VICEROY MISSION</span>
+        <div class="h-0.5 w-12 bg-gold-dark/60"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="py-section-gap px-gutter max-w-container-max mx-auto">
+    <div class="text-center mb-16">
+      <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-4">WHY CHOOSE US</span>
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">6 Reasons Clients<br/>Trust Viceroy</h2>
+      <p class="text-text-muted text-lg max-w-2xl mx-auto">Our approach combines expertise, innovation, and accountability to deliver results that matter.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card rounded-2xl p-8">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">school</span>
+        </div>
+        <h3 class="font-display font-bold text-lg text-white mb-3">Experienced Marketing Professionals</h3>
+        <p class="text-text-muted text-sm leading-relaxed">Seasoned marketing and political consultants who understand the nuances of digital and ground-level campaign management across Pune and Maharashtra.</p>
+      </div>
+      <div class="card rounded-2xl p-8">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">analytics</span>
+        </div>
+        <h3 class="font-display font-bold text-lg text-white mb-3">Data-Driven Decision Making</h3>
+        <p class="text-text-muted text-sm leading-relaxed">Every strategy we build is backed by real data — from voter surveys and market research to ad performance analytics and campaign metrics.</p>
+      </div>
+      <div class="card rounded-2xl p-8">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">design_services</span>
+        </div>
+        <h3 class="font-display font-bold text-lg text-white mb-3">Customized Strategies</h3>
+        <p class="text-text-muted text-sm leading-relaxed">No one-size-fits-all templates. Every campaign and marketing plan is custom-built to match your specific goals, audience, and timeline.</p>
+      </div>
+      <div class="card rounded-2xl p-8">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">verified</span>
+        </div>
+        <h3 class="font-display font-bold text-lg text-white mb-3">Proven Results</h3>
+        <p class="text-text-muted text-sm leading-relaxed">200+ campaigns delivered successfully. Our track record spans digital marketing wins, election victories, and measurable business growth for our clients.</p>
+      </div>
+      <div class="card rounded-2xl p-8">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">loop</span>
+        </div>
+        <h3 class="font-display font-bold text-lg text-white mb-3">End-to-End Campaign Management</h3>
+        <p class="text-text-muted text-sm leading-relaxed">From strategy and content creation to on-ground execution and post-campaign analysis — we handle every step so you can focus on leading.</p>
+      </div>
+      <div class="card rounded-2xl p-8">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">forum</span>
+        </div>
+        <h3 class="font-display font-bold text-lg text-white mb-3">Transparent Communication</h3>
+        <p class="text-text-muted text-sm leading-relaxed">Regular updates, clear reporting, and open communication at every stage. You always know what's happening and how your campaign is performing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR EXPERTISE AREAS -->
+  <section class="py-section-gap px-gutter bg-bg-indigo/15 border-y border-outline-variant/20">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-16">
+        <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-4">OUR EXPERTISE</span>
+        <h2 class="font-display font-bold text-4xl text-white">What We Excel At</h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+        <div class="flex items-center gap-2 bg-bg-indigo/50 border border-outline-variant/30 px-5 py-3 rounded-full">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">insights</span>
+          <span class="text-sm text-on-surface/80 font-medium">Digital Marketing</span>
+        </div>
+        <div class="flex items-center gap-2 bg-bg-indigo/50 border border-outline-variant/30 px-5 py-3 rounded-full">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">group</span>
+          <span class="text-sm text-on-surface/80 font-medium">Social Media Management</span>
+        </div>
+        <div class="flex items-center gap-2 bg-bg-indigo/50 border border-outline-variant/30 px-5 py-3 rounded-full">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">edit_note</span>
+          <span class="text-sm text-on-surface/80 font-medium">Content Creation</span>
+        </div>
+        <div class="flex items-center gap-2 bg-bg-indigo/50 border border-outline-variant/30 px-5 py-3 rounded-full">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">ads_click</span>
+          <span class="text-sm text-on-surface/80 font-medium">Meta Ads & Google Ads</span>
+        </div>
+        <div class="flex items-center gap-2 bg-bg-indigo/50 border border-outline-variant/30 px-5 py-3 rounded-full">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">leaderboard</span>
+          <span class="text-sm text-on-surface/80 font-medium">Lead Generation</span>
+        </div>
+        <div class="flex items-center gap-2 bg-bg-indigo/50 border border-outline-variant/30 px-5 py-3 rounded-full">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">how_to_vote</span>
+          <span class="text-sm text-on-surface/80 font-medium">Political Campaign Management</span>
+        </div>
+        <div class="flex items-center gap-2 bg-bg-indigo/50 border border-outline-variant/30 px-5 py-3 rounded-full">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">poll</span>
+          <span class="text-sm text-on-surface/80 font-medium">Survey & Research</span>
+        </div>
+        <div class="flex items-center gap-2 bg-bg-indigo/50 border border-outline-variant/30 px-5 py-3 rounded-full">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">videocam</span>
+          <span class="text-sm text-on-surface/80 font-medium">Documentary & Portfolio</span>
+        </div>
+        <div class="flex items-center gap-2 bg-bg-indigo/50 border border-outline-variant/30 px-5 py-3 rounded-full">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">analytics</span>
+          <span class="text-sm text-on-surface/80 font-medium">Result Analysis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-section-gap px-gutter">
+    <div class="max-w-4xl mx-auto bg-bg-indigo/30 border border-gold-dark/20 rounded-3xl p-12 md:p-20 text-center relative overflow-hidden low-poly">
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">Ready to Win in Pune<br/>&amp; Maharashtra?</h2>
+      <p class="text-text-muted text-lg mb-10 max-w-2xl mx-auto">Let's discuss your goals and build a customized strategy for your brand or campaign. Schedule a free consultation today.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+        <a href="contact.html" class="w-full sm:w-auto bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-sm tracking-widest px-10 py-5 rounded-xl shadow-xl shadow-gold-dark/30 hover:scale-105 transition-all text-center">Schedule a Consultation</a>
+        <a href="services.html" class="w-full sm:w-auto border-2 border-gold-dark/50 text-gold-light font-bold text-sm tracking-widest px-10 py-5 rounded-xl hover:bg-gold-dark/10 transition-all text-center">View Our Services</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- WhatsApp FAB -->
+<div class="fixed bottom-8 right-8 z-[60] group">
+  <div class="absolute right-full mr-4 bg-primary text-on-primary font-bold text-xs px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Chat on WhatsApp</div>
+  <a href="https://wa.me/919091110707" target="_blank" class="bg-primary hover:bg-gold-light text-on-primary p-4 rounded-full shadow-lg shadow-primary/30 block hover:scale-110 transition-all">
+    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">chat</span>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-bg-deep border-t border-outline-variant/20 pt-16 pb-8">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div class="md:col-span-2">
+        <a href="index.html" class="flex items-center gap-2 mb-5">
+          <img src="logo.png" alt="Viceroy Logo" class="h-8 w-8 object-contain" style="mix-blend-mode:screen;">
+          <span class="font-display font-bold text-xl text-primary">VICEROY</span>
+        </a>
+        <p class="text-text-muted text-sm leading-relaxed mb-6 max-w-sm">Viceroy Digital Media — Pune's full-service digital marketing & political consulting agency. Transforming brands, leaders, and campaigns through digital excellence.</p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/share/1Gsx22P6fb/" target="_blank" class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-text-muted hover:border-gold-light hover:text-gold-light transition-all"><span class="material-symbols-outlined text-sm">share</span></a>
+          <a href="https://www.instagram.com/viceroydigitalmedia" target="_blank" class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-text-muted hover:border-gold-light hover:text-gold-light transition-all"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
+          <a href="https://www.linkedin.com/company/109436697" target="_blank" class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-text-muted hover:border-gold-light hover:text-gold-light transition-all"><span class="material-symbols-outlined text-sm">work</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-xs tracking-widest text-white mb-6">SERVICES</h4>
+        <ul class="space-y-3 text-sm text-text-muted">
+          <li><a href="services.html#digital" class="hover:text-gold-light transition-colors">Digital Marketing</a></li>
+          <li><a href="services.html#political" class="hover:text-gold-light transition-colors">Political Campaign Management</a></li>
+          <li><a href="services.html#documentary" class="hover:text-gold-light transition-colors">Documentary & Portfolio</a></li>
+          <li><a href="services.html#research" class="hover:text-gold-light transition-colors">Survey & Research</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-xs tracking-widest text-white mb-6">CONTACT</h4>
+        <ul class="space-y-3 text-sm text-text-muted">
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">call</span><a href="tel:+919091110707" class="hover:text-gold-light transition-colors">909 111 0707</a></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">mail</span><a href="mailto:info@viceroymedia.in" class="hover:text-gold-light transition-colors">info@viceroymedia.in</a></li>
+          <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">location_on</span><span>Pune, Maharashtra, India</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-outline-variant/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-text-muted text-xs">© 2026 Viceroy Digital Media. All rights reserved. | viceroymedia.in</p>
+      <p class="text-text-muted text-xs">Complete Digital Marketing · Political Strategy · Brand Promotion · Survey & Research · Campaign Management</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    function open() { menu.classList.remove('menu-hidden'); menu.getBoundingClientRect(); menu.classList.add('menu-open'); document.body.style.overflow = 'hidden'; }
+    function close() { menu.classList.remove('menu-open'); document.body.style.overflow = ''; setTimeout(() => menu.classList.add('menu-hidden'), 350); }
+    if (btn && closeBtn && menu) { btn.addEventListener('click', open); closeBtn.addEventListener('click', close); document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); }); }
+  });
+</script>
+</body>
+</html>

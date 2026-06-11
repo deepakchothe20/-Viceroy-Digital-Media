@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Viceroy Digital Media | Digital Marketing & Political Consulting Pune</title>
+<meta name="description" content="Contact Viceroy Digital Media in Pune — call 909 111 0707, WhatsApp us, or fill the form. Get a free consultation for digital marketing, political campaign management, and more."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-primary": "#442c00", "gold-dark": "#A26E1C", "gold-light": "#F7D070",
+          "bg-deep": "#010A26", "bg-indigo": "#0A245C", "primary": "#fbbb54",
+          "on-surface": "#ece1d5", "text-muted": "#8A99B8", "outline-variant": "#504536",
+        },
+        spacing: { "gutter": "24px", "container-max": "1280px", "section-gap": "100px" },
+        fontFamily: { "display": ["Montserrat"], "body": ["Hanken Grotesk"] },
+      },
+    },
+  }
+</script>
+<style>
+  body { background-color: #010A26; color: #ece1d5; -webkit-font-smoothing: antialiased; }
+  .gold-gradient-text { background: linear-gradient(135deg, #F7D070 0%, #A26E1C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .glass-nav { backdrop-filter: blur(20px); background: rgba(1,10,38,0.85); }
+  #mobile-menu { background: rgba(1,10,38,0.98); backdrop-filter: blur(24px); transition: opacity 0.35s ease, transform 0.35s ease; opacity: 0; transform: translateY(-16px); pointer-events: none; }
+  #mobile-menu.menu-open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  #mobile-menu.menu-hidden { display: none !important; }
+  #mobile-menu a { font-size: 1.1rem; letter-spacing: 0.12em; font-weight: 700; color: #ece1d5; transition: color 0.2s ease; }
+  #mobile-menu a:hover { color: #fbbb54; }
+  .form-input { background: rgba(10,36,92,0.4); border: 1px solid rgba(80,69,54,0.4); color: #ece1d5; transition: border-color 0.3s; border-radius: 12px; width: 100%; padding: 14px 18px; font-family: 'Hanken Grotesk', sans-serif; font-size: 15px; outline: none; }
+  .form-input:focus { border-color: #fbbb54; }
+  .form-input::placeholder { color: #8A99B8; }
+  .contact-card { background: rgba(10,36,92,0.4); border: 1px solid rgba(80,69,54,0.3); transition: all 0.3s ease; border-radius: 16px; }
+  .contact-card:hover { border-color: rgba(162,110,28,0.5); transform: translateY(-4px); }
+  .low-poly { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M0 0l50 50L100 0z' fill='%23F7D070' fill-opacity='0.025'/%3E%3C/svg%3E"); }
+</style>
+</head>
+<body class="font-body overflow-x-hidden selection:bg-primary selection:text-on-primary">
+
+<!-- NAV -->
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/20">
+  <nav class="max-w-container-max mx-auto px-gutter py-4 flex justify-between items-center">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="logo.png" alt="Viceroy Logo" class="h-9 w-9 object-contain" style="mix-blend-mode:screen;">
+      <span class="font-display font-bold text-xl tracking-tight text-primary">VICEROY</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="index.html">HOME</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="about.html">ABOUT</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="services.html">SERVICES</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="gallery.html">GALLERY</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="testimonials.html">TESTIMONIALS</a>
+      <a class="text-xs font-bold tracking-widest text-primary border-b-2 border-primary pb-1" href="contact.html">CONTACT</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="tel:+919091110707" class="hidden md:block bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-xs tracking-widest px-5 py-3 rounded-lg hover:scale-105 transition-all shadow-lg shadow-gold-dark/20">📞 Call Now</a>
+      <button id="mobile-menu-btn" class="md:hidden text-primary p-2"><span class="material-symbols-outlined text-3xl">menu</span></button>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="menu-hidden fixed inset-0 z-[60] flex flex-col items-center justify-center gap-7">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-primary p-2 hover:rotate-90 transition-transform duration-300"><span class="material-symbols-outlined text-4xl">close</span></button>
+    <a href="index.html">HOME</a><a href="about.html">ABOUT</a><a href="services.html">SERVICES</a>
+    <a href="gallery.html">GALLERY</a><a href="testimonials.html">TESTIMONIALS</a><a href="contact.html">CONTACT</a>
+    <a href="tel:+919091110707" class="mt-4 bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-xs tracking-widest px-8 py-4 rounded-lg">📞 Call: 909 111 0707</a>
+  </div>
+</header>
+
+<main class="pt-20 overflow-x-hidden">
+
+  <!-- HERO -->
+  <section class="relative py-24 px-gutter text-center overflow-hidden">
+    <div class="absolute inset-0 low-poly pointer-events-none opacity-60"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-5">PUNE'S DIGITAL & POLITICAL MARKETING AGENCY</span>
+      <h1 class="font-display font-bold text-5xl md:text-6xl text-white mb-6 leading-tight">Let's <span class="gold-gradient-text">Grow Together</span></h1>
+      <p class="text-text-muted text-xl max-w-3xl mx-auto leading-relaxed">Whether you need digital marketing, political campaign management, a documentary, or research analysis — we're here to help. Get in touch for a free consultation.</p>
+    </div>
+  </section>
+
+  <!-- QUICK ACTIONS -->
+  <section class="px-gutter max-w-container-max mx-auto mb-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <a href="tel:+919091110707" class="contact-card p-8 flex flex-col items-center text-center gap-4 hover:bg-primary/5">
+        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings:'FILL' 1;">call</span>
+        </div>
+        <div>
+          <p class="font-bold text-xs tracking-widest text-primary mb-2">CALL NOW</p>
+          <p class="font-display font-bold text-2xl text-white">909 111 0707</p>
+          <p class="text-text-muted text-sm mt-2">Tap to call directly</p>
+        </div>
+      </a>
+      <a href="https://wa.me/919091110707" target="_blank" class="contact-card p-8 flex flex-col items-center text-center gap-4 hover:bg-primary/5">
+        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings:'FILL' 1;">chat</span>
+        </div>
+        <div>
+          <p class="font-bold text-xs tracking-widest text-primary mb-2">WHATSAPP US</p>
+          <p class="font-display font-bold text-2xl text-white">WhatsApp</p>
+          <p class="text-text-muted text-sm mt-2">Chat with us instantly</p>
+        </div>
+      </a>
+      <div class="contact-card p-8 flex flex-col items-center text-center gap-4">
+        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings:'FILL' 1;">location_on</span>
+        </div>
+        <div>
+          <p class="font-bold text-xs tracking-widest text-primary mb-2">OUR LOCATION</p>
+          <p class="font-display font-bold text-2xl text-white">Pune</p>
+          <p class="text-text-muted text-sm mt-2">Maharashtra, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM + INFO -->
+  <section class="py-16 px-gutter max-w-container-max mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+      <!-- FORM -->
+      <div>
+        <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-5">SEND A MESSAGE</span>
+        <h2 class="font-display font-bold text-4xl text-white mb-8">Request a<br/>Free Consultation</h2>
+        <form id="contact-form" class="space-y-5" onsubmit="handleSubmit(event)">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="font-bold text-xs tracking-widest text-text-muted block mb-2">YOUR NAME *</label>
+              <input type="text" required placeholder="Your full name" class="form-input" id="contact-name"/>
+            </div>
+            <div>
+              <label class="font-bold text-xs tracking-widest text-text-muted block mb-2">PHONE / WHATSAPP *</label>
+              <input type="tel" required placeholder="Your mobile number" class="form-input" id="contact-phone"/>
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-xs tracking-widest text-text-muted block mb-2">EMAIL ADDRESS</label>
+            <input type="email" placeholder="your@email.com" class="form-input" id="contact-email"/>
+          </div>
+          <div>
+            <label class="font-bold text-xs tracking-widest text-text-muted block mb-2">SERVICE REQUIRED</label>
+            <select class="form-input" id="contact-service">
+              <option value="" class="bg-bg-deep">Select a service...</option>
+              <option value="digital" class="bg-bg-deep">Digital Marketing</option>
+              <option value="social" class="bg-bg-deep">Social Media Management</option>
+              <option value="ads" class="bg-bg-deep">Meta & Google Ads</option>
+              <option value="lead" class="bg-bg-deep">Lead Generation</option>
+              <option value="political" class="bg-bg-deep">Political Campaign Management</option>
+              <option value="booth" class="bg-bg-deep">Booth-to-Booth Management</option>
+              <option value="ground" class="bg-bg-deep">Ground Management</option>
+              <option value="survey" class="bg-bg-deep">Voter Survey & Research</option>
+              <option value="calling" class="bg-bg-deep">Calling Setup & Voter Outreach</option>
+              <option value="documentary" class="bg-bg-deep">Documentary & Portfolio</option>
+              <option value="research" class="bg-bg-deep">Research & Result Analysis</option>
+              <option value="other" class="bg-bg-deep">Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="font-bold text-xs tracking-widest text-text-muted block mb-2">YOUR MESSAGE</label>
+            <textarea rows="5" placeholder="Tell us about your project, campaign, or requirements..." class="form-input resize-none" id="contact-message"></textarea>
+          </div>
+          <button type="submit" id="submit-btn" class="w-full bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-sm tracking-widest py-5 rounded-xl shadow-xl shadow-gold-dark/30 hover:scale-[1.02] transition-all">
+            Send Message
+          </button>
+          <div id="form-success" class="hidden bg-green-900/30 border border-green-700/40 text-green-300 font-bold text-sm px-5 py-4 rounded-xl text-center">
+            ✓ Message sent! We'll get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div>
+        <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-5">GET IN TOUCH</span>
+        <h2 class="font-display font-bold text-4xl text-white mb-8">Contact Information</h2>
+
+        <div class="space-y-5 mb-12">
+          <div class="flex items-start gap-5 p-6 bg-bg-indigo/30 border border-outline-variant/20 rounded-2xl">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">call</span>
+            </div>
+            <div>
+              <p class="font-bold text-xs tracking-widest text-primary mb-1">PHONE & WHATSAPP</p>
+              <a href="tel:+919091110707" class="font-display font-bold text-2xl text-white hover:text-gold-light transition-colors">909 111 0707</a>
+              <p class="text-text-muted text-sm mt-1">Available Mon–Sat, 9 AM – 7 PM</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5 p-6 bg-bg-indigo/30 border border-outline-variant/20 rounded-2xl">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">mail</span>
+            </div>
+            <div>
+              <p class="font-bold text-xs tracking-widest text-primary mb-1">EMAIL</p>
+              <a href="mailto:info@viceroymedia.in" class="font-display font-bold text-2xl text-white hover:text-gold-light transition-colors break-all">info@viceroymedia.in</a>
+              <p class="text-text-muted text-sm mt-1">We respond within 24 hours</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5 p-6 bg-bg-indigo/30 border border-outline-variant/20 rounded-2xl">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">location_on</span>
+            </div>
+            <div>
+              <p class="font-bold text-xs tracking-widest text-primary mb-1">LOCATION</p>
+              <p class="font-display font-bold text-2xl text-white">Pune, Maharashtra</p>
+              <p class="text-text-muted text-sm mt-1">India — Serving clients across Maharashtra</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOLLOW US -->
+        <div>
+          <p class="font-bold text-xs tracking-[0.25em] text-primary mb-6">FOLLOW US</p>
+          <div class="flex gap-4">
+            <a href="https://www.facebook.com/share/1Gsx22P6fb/" target="_blank" class="flex items-center gap-3 px-5 py-3 bg-bg-indigo/40 border border-outline-variant/30 rounded-xl hover:border-gold-dark transition-all">
+              <span class="material-symbols-outlined text-primary">share</span>
+              <span class="font-bold text-sm text-white">Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/viceroydigitalmedia" target="_blank" class="flex items-center gap-3 px-5 py-3 bg-bg-indigo/40 border border-outline-variant/30 rounded-xl hover:border-gold-dark transition-all">
+              <span class="material-symbols-outlined text-primary">photo_camera</span>
+              <span class="font-bold text-sm text-white">Instagram</span>
+            </a>
+            <a href="https://www.linkedin.com/company/109436697" target="_blank" class="flex items-center gap-3 px-5 py-3 bg-bg-indigo/40 border border-outline-variant/30 rounded-xl hover:border-gold-dark transition-all">
+              <span class="material-symbols-outlined text-primary">work</span>
+              <span class="font-bold text-sm text-white">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="py-section-gap px-gutter bg-bg-indigo/15 border-y border-outline-variant/20">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-14">
+        <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-4">HOW WE WORK</span>
+        <h2 class="font-display font-bold text-4xl text-white">Our Services — Here for You</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="contact-card p-8">
+          <span class="material-symbols-outlined text-primary text-4xl mb-5 block" style="font-variation-settings:'FILL' 1;">how_to_vote</span>
+          <h3 class="font-display font-bold text-lg text-white mb-3">Political Campaigns</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Complete election management from candidate positioning and political surveys to ground operations and booth management across Pune and Maharashtra.</p>
+        </div>
+        <div class="contact-card p-8">
+          <span class="material-symbols-outlined text-primary text-4xl mb-5 block" style="font-variation-settings:'FILL' 1;">insights</span>
+          <h3 class="font-display font-bold text-lg text-white mb-3">Digital Marketing & Lead Gen</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Social media management, Meta & Google Ads, content creation, and lead generation campaigns with measurable, transparent reporting.</p>
+        </div>
+        <div class="contact-card p-8">
+          <span class="material-symbols-outlined text-primary text-4xl mb-5 block" style="font-variation-settings:'FILL' 1;">videocam</span>
+          <h3 class="font-display font-bold text-lg text-white mb-3">Documentary & Research</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Professional documentary production, personal branding portfolios, voter surveys, and campaign performance analysis for better decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="py-section-gap px-gutter">
+    <div class="max-w-4xl mx-auto bg-bg-indigo/30 border border-gold-dark/20 rounded-3xl p-12 md:p-20 text-center relative overflow-hidden low-poly">
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">Start Your Campaign Today</h2>
+      <p class="text-text-muted text-lg mb-10 max-w-2xl mx-auto">Don't leave your next election or brand campaign to chance. Contact Pune's most comprehensive digital marketing agency for a free strategy consultation today.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+        <a href="tel:+919091110707" class="w-full sm:w-auto bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-sm tracking-widest px-10 py-5 rounded-xl shadow-xl shadow-gold-dark/30 hover:scale-105 transition-all text-center">📞 CALL NOW: 909 111 0707</a>
+        <a href="https://wa.me/919091110707" target="_blank" class="w-full sm:w-auto border-2 border-gold-dark/50 text-gold-light font-bold text-sm tracking-widest px-10 py-5 rounded-xl hover:bg-gold-dark/10 transition-all text-center">💬 WHATSAPP US</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- WhatsApp FAB -->
+<div class="fixed bottom-8 right-8 z-[60] group">
+  <div class="absolute right-full mr-4 bg-primary text-on-primary font-bold text-xs px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Chat on WhatsApp</div>
+  <a href="https://wa.me/919091110707" target="_blank" class="bg-primary hover:bg-gold-light text-on-primary p-4 rounded-full shadow-lg shadow-primary/30 block hover:scale-110 transition-all">
+    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">chat</span>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-bg-deep border-t border-outline-variant/20 pt-16 pb-8">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div class="md:col-span-2">
+        <a href="index.html" class="flex items-center gap-2 mb-5">
+          <img src="logo.png" alt="Viceroy Logo" class="h-8 w-8 object-contain" style="mix-blend-mode:screen;">
+          <span class="font-display font-bold text-xl text-primary">VICEROY</span>
+        </a>
+        <p class="text-text-muted text-sm leading-relaxed mb-6 max-w-sm">Viceroy Digital Media — Pune's full-service digital marketing & political consulting agency. Transforming brands, leaders, and campaigns through digital excellence.</p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/share/1Gsx22P6fb/" target="_blank" class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-text-muted hover:border-gold-light hover:text-gold-light transition-all"><span class="material-symbols-outlined text-sm">share</span></a>
+          <a href="https://www.instagram.com/viceroydigitalmedia" target="_blank" class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-text-muted hover:border-gold-light hover:text-gold-light transition-all"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
+          <a href="https://www.linkedin.com/company/109436697" target="_blank" class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-text-muted hover:border-gold-light hover:text-gold-light transition-all"><span class="material-symbols-outlined text-sm">work</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-xs tracking-widest text-white mb-6">SERVICES</h4>
+        <ul class="space-y-3 text-sm text-text-muted">
+          <li><a href="services.html#digital" class="hover:text-gold-light transition-colors">Digital Marketing</a></li>
+          <li><a href="services.html#political" class="hover:text-gold-light transition-colors">Political Campaign Management</a></li>
+          <li><a href="services.html#documentary" class="hover:text-gold-light transition-colors">Documentary & Portfolio</a></li>
+          <li><a href="services.html#research" class="hover:text-gold-light transition-colors">Survey & Research</a></li>
+          <li><a href="services.html" class="hover:text-gold-light transition-colors">Lead Generation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-xs tracking-widest text-white mb-6">CONTACT</h4>
+        <ul class="space-y-3 text-sm text-text-muted">
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">call</span><a href="tel:+919091110707" class="hover:text-gold-light transition-colors">909 111 0707</a></li>
+          <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">mail</span><a href="mailto:info@viceroymedia.in" class="hover:text-gold-light transition-colors">info@viceroymedia.in</a></li>
+          <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">location_on</span><span>Pune, Maharashtra, India</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-outline-variant/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-text-muted text-xs">© 2026 Viceroy Digital Media. All rights reserved. | viceroymedia.in</p>
+      <p class="text-text-muted text-xs">Complete Digital Marketing · Political Strategy · Brand Promotion · Survey & Research · Campaign Management</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    function open() { menu.classList.remove('menu-hidden'); menu.getBoundingClientRect(); menu.classList.add('menu-open'); document.body.style.overflow = 'hidden'; }
+    function close() { menu.classList.remove('menu-open'); document.body.style.overflow = ''; setTimeout(() => menu.classList.add('menu-hidden'), 350); }
+    if (btn && closeBtn && menu) { btn.addEventListener('click', open); closeBtn.addEventListener('click', close); document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); }); }
+  });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('contact-name').value;
+    const phone = document.getElementById('contact-phone').value;
+    const service = document.getElementById('contact-service').value;
+    const message = document.getElementById('contact-message').value;
+    // Build WhatsApp message
+    const text = `Hello Viceroy Digital Media!%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service || 'Not specified')}%0AMessage: ${encodeURIComponent(message || 'No message')}`;
+    window.open(`https://wa.me/919091110707?text=${text}`, '_blank');
+    document.getElementById('form-success').classList.remove('hidden');
+    document.getElementById('contact-form').reset();
+    setTimeout(() => document.getElementById('form-success').classList.add('hidden'), 5000);
+  }
+</script>
+</body>
+</html>
