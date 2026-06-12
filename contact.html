@@ -131,54 +131,13 @@
   <section class="py-16 px-gutter max-w-container-max mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 
-      <!-- FORM -->
-      <div>
-        <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-5">SEND A MESSAGE</span>
-        <h2 class="font-display font-bold text-4xl text-white mb-8">Request a<br/>Free Consultation</h2>
-        <form id="contact-form" class="space-y-5" onsubmit="handleSubmit(event)">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label class="font-bold text-xs tracking-widest text-text-muted block mb-2">YOUR NAME *</label>
-              <input type="text" required placeholder="Your full name" class="form-input" id="contact-name"/>
-            </div>
-            <div>
-              <label class="font-bold text-xs tracking-widest text-text-muted block mb-2">PHONE / WHATSAPP *</label>
-              <input type="tel" required placeholder="Your mobile number" class="form-input" id="contact-phone"/>
-            </div>
-          </div>
-          <div>
-            <label class="font-bold text-xs tracking-widest text-text-muted block mb-2">EMAIL ADDRESS</label>
-            <input type="email" placeholder="your@email.com" class="form-input" id="contact-email"/>
-          </div>
-          <div>
-            <label class="font-bold text-xs tracking-widest text-text-muted block mb-2">SERVICE REQUIRED</label>
-            <select class="form-input" id="contact-service">
-              <option value="" class="bg-bg-deep">Select a service...</option>
-              <option value="digital" class="bg-bg-deep">Digital Marketing</option>
-              <option value="social" class="bg-bg-deep">Social Media Management</option>
-              <option value="ads" class="bg-bg-deep">Meta & Google Ads</option>
-              <option value="lead" class="bg-bg-deep">Lead Generation</option>
-              <option value="political" class="bg-bg-deep">Political Campaign Management</option>
-              <option value="booth" class="bg-bg-deep">Booth-to-Booth Management</option>
-              <option value="ground" class="bg-bg-deep">Ground Management</option>
-              <option value="survey" class="bg-bg-deep">Voter Survey & Research</option>
-              <option value="calling" class="bg-bg-deep">Calling Setup & Voter Outreach</option>
-              <option value="documentary" class="bg-bg-deep">Documentary & Portfolio</option>
-              <option value="research" class="bg-bg-deep">Research & Result Analysis</option>
-              <option value="other" class="bg-bg-deep">Other</option>
-            </select>
-          </div>
-          <div>
-            <label class="font-bold text-xs tracking-widest text-text-muted block mb-2">YOUR MESSAGE</label>
-            <textarea rows="5" placeholder="Tell us about your project, campaign, or requirements..." class="form-input resize-none" id="contact-message"></textarea>
-          </div>
-          <button type="submit" id="submit-btn" class="w-full bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-sm tracking-widest py-5 rounded-xl shadow-xl shadow-gold-dark/30 hover:scale-[1.02] transition-all">
-            Send Message
-          </button>
-          <div id="form-success" class="hidden bg-green-900/30 border border-green-700/40 text-green-300 font-bold text-sm px-5 py-4 rounded-xl text-center">
-            ✓ Message sent! We'll get back to you within 24 hours.
-          </div>
-        </form>
+      <!-- MAP -->
+      <div class="h-full flex flex-col">
+        <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-5">OUR LOCATION</span>
+        <h2 class="font-display font-bold text-4xl text-white mb-8">Visit Our<br/>Office</h2>
+        <div class="w-full grow min-h-[400px] rounded-2xl overflow-hidden border border-outline-variant/30 shadow-2xl">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.355325515321!2d73.7663242!3d18.5567551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bec704772ed1%3A0x6b0931215eeb3b3!2sBaner%20-%20Mahalunge%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
 
       <!-- INFO -->
@@ -214,7 +173,7 @@
             <div>
               <p class="font-bold text-xs tracking-widest text-primary mb-1">LOCATION</p>
               <p class="font-display font-bold text-2xl text-white">Pune, Maharashtra</p>
-              <p class="text-text-muted text-sm mt-1">India — Serving clients across Maharashtra</p>
+              <p class="text-text-muted text-sm mt-1">House of Viceroy, Teerth Town Road, Baner NX, Pune</p>
             </div>
           </div>
         </div>
@@ -284,7 +243,7 @@
 
 <!-- WhatsApp FAB -->
 <div class="fixed bottom-8 right-8 z-[60] group">
-  <div class="absolute right-full mr-4 bg-primary text-on-primary font-bold text-xs px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Chat on WhatsApp</div>
+  <div class="absolute right-full mr-4 bg-primary text-on-primary font-bold text-xs px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Request a Proposal</div>
   <a href="https://wa.me/919091110707" target="_blank" class="bg-primary hover:bg-gold-light text-on-primary p-4 rounded-full shadow-lg shadow-primary/30 block hover:scale-110 transition-all">
     <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">chat</span>
   </a>
@@ -321,7 +280,7 @@
         <ul class="space-y-3 text-sm text-text-muted">
           <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">call</span><a href="tel:+919091110707" class="hover:text-gold-light transition-colors">909 111 0707</a></li>
           <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">mail</span><a href="mailto:info@viceroymedia.in" class="hover:text-gold-light transition-colors">info@viceroymedia.in</a></li>
-          <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">location_on</span><span>Pune, Maharashtra, India</span></li>
+          <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base mt-0.5">location_on</span><span>House of Viceroy, Teerth Town Road, Baner NX, Pune</span></li>
         </ul>
       </div>
     </div>
