@@ -47,7 +47,12 @@
 </script>
 <style>
   body { background-color: #010A26; color: #ece1d5; -webkit-font-smoothing: antialiased; }
-  .gold-gradient-text { background: linear-gradient(135deg, #F7D070 0%, #A26E1C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  @keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .gold-gradient-text { background: linear-gradient(135deg, #F7D070 0%, #A26E1C 50%, #F7D070 100%); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient-flow 3s ease infinite; }
   .glass-nav { backdrop-filter: blur(20px); background: rgba(1,10,38,0.85); }
   .service-card { background: rgba(10,36,92,0.4); border: 1px solid rgba(80,69,54,0.3); transition: all 0.3s ease; }
   .service-card:hover { border-color: #A26E1C; transform: translateY(-6px); box-shadow: 0 20px 60px rgba(251,187,84,0.08); }
@@ -81,7 +86,7 @@
       <a class="text-xs font-bold tracking-widest text-primary border-b-2 border-primary pb-1" href="index.html">HOME</a>
       <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="about.html">ABOUT</a>
       <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="services.html">SERVICES</a>
-      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="gallery.html">GALLERY</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="careers.html">CAREERS</a>
       <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="testimonials.html">TESTIMONIALS</a>
       <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="contact.html">CONTACT</a>
     </div>
@@ -102,7 +107,7 @@
   <a href="index.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase; transition:color 0.2s;">HOME</a>
   <a href="about.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">ABOUT</a>
   <a href="services.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">SERVICES</a>
-  <a href="gallery.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">GALLERY</a>
+  <a href="careers.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">CAREERS</a>
   <a href="testimonials.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">TESTIMONIALS</a>
   <a href="contact.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">CONTACT</a>
   <a href="contact.html" style="display:inline-block; margin-top:20px; background:linear-gradient(135deg,#F7D070,#A26E1C); color:#442c00; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:800; letter-spacing:0.2em; text-decoration:none; padding:14px 32px; border-radius:10px; text-transform:uppercase;">Get Free Consultation</a>
@@ -151,22 +156,22 @@
   </section>
 
   <!-- STATS -->
-  <section class="py-16 px-gutter bg-bg-indigo/20 border-y border-outline-variant/20">
+  <section class="py-16 px-gutter bg-bg-indigo/20 border-y border-outline-variant/20" id="stats-section">
     <div class="max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
       <div>
-        <div class="font-display font-bold text-4xl md:text-5xl text-gold-light stat-glow mb-2">20+</div>
+        <div class="font-display font-bold text-4xl md:text-5xl text-gold-light stat-glow mb-2"><span class="counter" data-target="20">0</span>+</div>
         <div class="text-xs font-bold tracking-widest text-text-muted">SUCCESSFUL CAMPAIGNS</div>
       </div>
       <div>
-        <div class="font-display font-bold text-4xl md:text-5xl text-gold-light stat-glow mb-2">15+</div>
+        <div class="font-display font-bold text-4xl md:text-5xl text-gold-light stat-glow mb-2"><span class="counter" data-target="15">0</span>+</div>
         <div class="text-xs font-bold tracking-widest text-text-muted">TRUSTED CLIENTS</div>
       </div>
       <div>
-        <div class="font-display font-bold text-4xl md:text-5xl text-gold-light stat-glow mb-2">500K+</div>
+        <div class="font-display font-bold text-4xl md:text-5xl text-gold-light stat-glow mb-2"><span class="counter" data-target="500">0</span>K+</div>
         <div class="text-xs font-bold tracking-widest text-text-muted">DIGITAL REACH</div>
       </div>
       <div>
-        <div class="font-display font-bold text-4xl md:text-5xl text-gold-light stat-glow mb-2">100%</div>
+        <div class="font-display font-bold text-4xl md:text-5xl text-gold-light stat-glow mb-2"><span class="counter" data-target="100">0</span>%</div>
         <div class="text-xs font-bold tracking-widest text-text-muted">GROWTH-FOCUSED APPROACH</div>
       </div>
     </div>
@@ -474,6 +479,41 @@
     function open() { menu.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
     function close() { menu.style.display = 'none'; document.body.style.overflow = ''; }
     if (btn && closeBtn && menu) { btn.addEventListener('click', open); closeBtn.addEventListener('click', close); document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); }); }
+
+    // Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    const observerOptions = {
+      threshold: 0.5
+    };
+
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = +counter.getAttribute('data-target');
+          // For slower counting, we increase the steps based on target size
+          const speed = target > 100 ? 150 : 60; 
+          
+          const updateCount = () => {
+            const count = +counter.innerText;
+            const inc = Math.max(1, Math.ceil(target / speed));
+            
+            if (count < target) {
+              counter.innerText = count + inc > target ? target : count + inc;
+              setTimeout(updateCount, 60);
+            } else {
+              counter.innerText = target;
+            }
+          };
+          updateCount();
+          observer.unobserve(counter);
+        }
+      });
+    }, observerOptions);
+
+    counters.forEach(counter => {
+      counterObserver.observe(counter);
+    });
   });
 </script>
 </body>
