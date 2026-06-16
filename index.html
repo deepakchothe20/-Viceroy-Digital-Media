@@ -71,6 +71,12 @@
   .delay-3 { animation-delay: 0.4s; opacity: 0; }
   .delay-4 { animation-delay: 0.55s; opacity: 0; }
   .low-poly { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M0 0l50 50L100 0z' fill='%23F7D070' fill-opacity='0.03'/%3E%3C/svg%3E"); }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  @keyframes scrollMarquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  .animate-marquee { display: flex; width: max-content; animation: scrollMarquee 30s linear infinite; }
+  .brand-logo-text { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.5rem; color: rgba(236, 225, 213, 0.4); transition: color 0.3s; white-space: nowrap; padding: 0 3rem; cursor: default; }
+  .brand-logo-text:hover { color: rgba(251, 187, 84, 0.8); }
 </style>
 </head>
 <body class="font-body overflow-x-hidden selection:bg-primary selection:text-on-primary">
@@ -85,7 +91,7 @@
     <div class="hidden md:flex items-center gap-8">
       <a class="text-xs font-bold tracking-widest text-primary border-b-2 border-primary pb-1" href="index.html">HOME</a>
       <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="about.html">ABOUT</a>
-      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="services.html">SERVICES</a>
+      <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="sernew.html">SERVICES</a>
       <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="careers.html">CAREERS</a>
       <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="testimonials.html">TESTIMONIALS</a>
       <a class="text-xs font-bold tracking-widest text-on-surface/70 hover:text-primary transition-colors" href="contact.html">CONTACT</a>
@@ -106,7 +112,7 @@
   </button>
   <a href="index.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase; transition:color 0.2s;">HOME</a>
   <a href="about.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">ABOUT</a>
-  <a href="services.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">SERVICES</a>
+  <a href="sernew.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">SERVICES</a>
   <a href="careers.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">CAREERS</a>
   <a href="testimonials.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">TESTIMONIALS</a>
   <a href="contact.html" style="display:block; width:100%; text-align:center; font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; letter-spacing:0.2em; color:#ece1d5; text-decoration:none; padding:12px 0; text-transform:uppercase;">CONTACT</a>
@@ -133,7 +139,7 @@
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-5 animate-fade-up delay-4">
         <a href="contact.html" class="w-full sm:w-auto bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-sm tracking-widest px-10 py-5 rounded-xl shadow-2xl shadow-gold-dark/30 hover:scale-105 transition-all text-center">Get a Free Consultation</a>
-        <a href="services.html" class="w-full sm:w-auto border-2 border-gold-dark/50 text-gold-light font-bold text-sm tracking-widest px-10 py-5 rounded-xl hover:bg-gold-dark/10 hover:border-gold-dark transition-all text-center">Explore Our Services</a>
+        <a href="sernew.html" class="w-full sm:w-auto border-2 border-gold-dark/50 text-gold-light font-bold text-sm tracking-widest px-10 py-5 rounded-xl hover:bg-gold-dark/10 hover:border-gold-dark transition-all text-center">Explore Our Services</a>
       </div>
     </div>
   </section>
@@ -198,7 +204,7 @@
           <li class="flex items-center gap-2 text-sm text-on-surface/80"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Lead Generation Campaigns</li>
           <li class="flex items-center gap-2 text-sm text-on-surface/80"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Brand & Website Promotion</li>
         </ul>
-        <a href="services.html#digital" class="text-gold-light font-bold text-sm tracking-widest flex items-center gap-2 hover:gap-4 transition-all">LEARN MORE <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+        <a href="sernew.html#digital" class="text-gold-light font-bold text-sm tracking-widest flex items-center gap-2 hover:gap-4 transition-all">LEARN MORE <span class="material-symbols-outlined text-base">arrow_forward</span></a>
       </div>
       <!-- Political -->
       <div class="service-card rounded-2xl p-10">
@@ -213,7 +219,7 @@
           <li class="flex items-center gap-2 text-sm text-on-surface/80"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Ground-Level Operations</li>
           <li class="flex items-center gap-2 text-sm text-on-surface/80"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Calling Setup & Voter Outreach</li>
         </ul>
-        <a href="services.html#political" class="text-gold-light font-bold text-sm tracking-widest flex items-center gap-2 hover:gap-4 transition-all">LEARN MORE <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+        <a href="sernew.html#political" class="text-gold-light font-bold text-sm tracking-widest flex items-center gap-2 hover:gap-4 transition-all">LEARN MORE <span class="material-symbols-outlined text-base">arrow_forward</span></a>
       </div>
       <!-- Documentary -->
       <div class="service-card rounded-2xl p-10">
@@ -228,7 +234,7 @@
           <li class="flex items-center gap-2 text-sm text-on-surface/80"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Personal Branding Portfolios</li>
           <li class="flex items-center gap-2 text-sm text-on-surface/80"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Achievement Showcases & Event Coverage</li>
         </ul>
-        <a href="services.html#documentary" class="text-gold-light font-bold text-sm tracking-widest flex items-center gap-2 hover:gap-4 transition-all">LEARN MORE <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+        <a href="sernew.html#documentary" class="text-gold-light font-bold text-sm tracking-widest flex items-center gap-2 hover:gap-4 transition-all">LEARN MORE <span class="material-symbols-outlined text-base">arrow_forward</span></a>
       </div>
       <!-- Research -->
       <div class="service-card rounded-2xl p-10">
@@ -243,11 +249,11 @@
           <li class="flex items-center gap-2 text-sm text-on-surface/80"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Market Research</li>
           <li class="flex items-center gap-2 text-sm text-on-surface/80"><span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>Strategic Recommendations & Reporting</li>
         </ul>
-        <a href="services.html#research" class="text-gold-light font-bold text-sm tracking-widest flex items-center gap-2 hover:gap-4 transition-all">LEARN MORE <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+        <a href="sernew.html#research" class="text-gold-light font-bold text-sm tracking-widest flex items-center gap-2 hover:gap-4 transition-all">LEARN MORE <span class="material-symbols-outlined text-base">arrow_forward</span></a>
       </div>
     </div>
     <div class="text-center mt-12">
-      <a href="services.html" class="inline-flex items-center gap-2 border-2 border-gold-dark/50 text-gold-light font-bold text-sm tracking-widest px-10 py-4 rounded-xl hover:bg-gold-dark/10 hover:border-gold-dark transition-all">VIEW ALL SERVICES <span class="material-symbols-outlined">arrow_forward</span></a>
+      <a href="sernew.html" class="inline-flex items-center gap-2 border-2 border-gold-dark/50 text-gold-light font-bold text-sm tracking-widest px-10 py-4 rounded-xl hover:bg-gold-dark/10 hover:border-gold-dark transition-all">VIEW ALL SERVICES <span class="material-symbols-outlined">arrow_forward</span></a>
     </div>
   </section>
 
@@ -322,6 +328,137 @@
             <p class="font-bold text-white text-sm">Growth Marketing</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY MARQUEE -->
+  <section class="py-10 border-y border-outline-variant/20 bg-bg-indigo/10 overflow-hidden relative mb-16">
+    <p class="text-center font-bold text-xs tracking-[0.25em] text-text-muted mb-8">TRUSTED BY</p>
+    <div class="relative flex overflow-hidden group">
+      <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#010A26] to-transparent z-10 pointer-events-none"></div>
+      <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#010A26] to-transparent z-10 pointer-events-none"></div>
+      <div class="animate-marquee items-center group-hover:[animation-play-state:paused]">
+        <!-- Set 1 -->
+        <div class="brand-logo-text">Makai Agro</div>
+        <div class="brand-logo-text">Meera Vastu Infra</div>
+        <div class="brand-logo-text">HDFC Bank</div>
+        <div class="brand-logo-text">DES Pune University</div>
+        <div class="brand-logo-text">EURPA</div>
+        <div class="brand-logo-text">Cubis Software Solution</div>
+        <div class="brand-logo-text">PasuKhata</div>
+        <!-- Set 2 for seamless loop -->
+        <div class="brand-logo-text">Makai Agro</div>
+        <div class="brand-logo-text">Meera Vastu Infra</div>
+        <div class="brand-logo-text">HDFC Bank</div>
+        <div class="brand-logo-text">DES Pune University</div>
+        <div class="brand-logo-text">EURPA</div>
+        <div class="brand-logo-text">Cubis Software Solution</div>
+        <div class="brand-logo-text">PasuKhata</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO GALLERY -->
+  <section class="py-section-gap px-gutter max-w-container-max mx-auto">
+    <div class="text-center mb-12">
+      <span class="font-bold text-xs tracking-[0.25em] text-primary block mb-4">REELS & STORIES</span>
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">Trending at Viceroy</h2>
+      <div class="flex gap-4 justify-center">
+        <button onclick="document.getElementById('video-gallery-container').scrollBy({left: -320, behavior: 'smooth'})" class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-text-muted hover:border-gold-light hover:text-gold-light hover:bg-gold-light/10 transition-all bg-surface-container">
+          <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+        <button onclick="document.getElementById('video-gallery-container').scrollBy({left: 320, behavior: 'smooth'})" class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-text-muted hover:border-gold-light hover:text-gold-light hover:bg-gold-light/10 transition-all bg-surface-container">
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Horizontal scroll container -->
+    <div id="video-gallery-container" class="flex overflow-x-auto gap-4 md:gap-6 pb-8 snap-x snap-mandatory scrollbar-hide scroll-smooth">
+      
+      <!-- Video 1 -->
+      <div class="relative w-[280px] md:w-[340px] h-[500px] md:h-[600px] shrink-0 snap-center group rounded-2xl overflow-hidden cursor-pointer bg-surface-container" onclick="togglePlay(this)">
+        <video class="w-full h-full object-cover" src="gallery/video/British Video 1.mp4" loop playsinline></video>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors pointer-events-none"></div>
+        <div class="absolute bottom-6 right-6 pointer-events-none">
+          <span class="material-symbols-outlined text-white text-3xl font-bold drop-shadow-lg">arrow_outward</span>
+        </div>
+        <div class="absolute bottom-6 left-6 pointer-events-none">
+           <span class="text-white font-bold text-lg drop-shadow-md">British Video 1</span>
+        </div>
+        <!-- Play overlay -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-100 group-[.is-playing]:opacity-0 transition-opacity pointer-events-none">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-4xl ml-1">play_arrow</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="relative w-[280px] md:w-[340px] h-[500px] md:h-[600px] shrink-0 snap-center group rounded-2xl overflow-hidden cursor-pointer bg-surface-container" onclick="togglePlay(this)">
+        <video class="w-full h-full object-cover" src="gallery/video/Meera Reel AI.mp4" loop playsinline></video>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors pointer-events-none"></div>
+        <div class="absolute bottom-6 right-6 pointer-events-none">
+          <span class="material-symbols-outlined text-white text-3xl font-bold drop-shadow-lg">arrow_outward</span>
+        </div>
+        <div class="absolute bottom-6 left-6 pointer-events-none">
+           <span class="text-white font-bold text-lg drop-shadow-md">Meera Reel AI</span>
+        </div>
+        <!-- Play overlay -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-100 group-[.is-playing]:opacity-0 transition-opacity pointer-events-none">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-4xl ml-1">play_arrow</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="relative w-[280px] md:w-[340px] h-[500px] md:h-[600px] shrink-0 snap-center group rounded-2xl overflow-hidden cursor-pointer bg-surface-container" onclick="togglePlay(this)">
+        <video class="w-full h-full object-cover" src="gallery/video/Reel 1.mp4" loop playsinline></video>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors pointer-events-none"></div>
+        <div class="absolute bottom-6 right-6 pointer-events-none">
+          <span class="material-symbols-outlined text-white text-3xl font-bold drop-shadow-lg">arrow_outward</span>
+        </div>
+        <div class="absolute bottom-6 left-6 pointer-events-none">
+           <span class="text-white font-bold text-lg drop-shadow-md">Reel 1</span>
+        </div>
+        <!-- Play overlay -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-100 group-[.is-playing]:opacity-0 transition-opacity pointer-events-none">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-4xl ml-1">play_arrow</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="relative w-[280px] md:w-[340px] h-[500px] md:h-[600px] shrink-0 snap-center group rounded-2xl overflow-hidden cursor-pointer bg-surface-container" onclick="togglePlay(this)">
+        <video class="w-full h-full object-cover" src="gallery/video/Reel AI.mp4" loop playsinline></video>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors pointer-events-none"></div>
+        <div class="absolute bottom-6 right-6 pointer-events-none">
+          <span class="material-symbols-outlined text-white text-3xl font-bold drop-shadow-lg">arrow_outward</span>
+        </div>
+        <div class="absolute bottom-6 left-6 pointer-events-none">
+           <span class="text-white font-bold text-lg drop-shadow-md">Reel AI</span>
+        </div>
+        <!-- Play overlay -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-100 group-[.is-playing]:opacity-0 transition-opacity pointer-events-none">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-4xl ml-1">play_arrow</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="mt-16 border-t border-outline-variant/20 pt-16">
+      <div class="text-center mb-10">
+        <h3 class="font-display font-bold text-3xl md:text-4xl text-white mb-4">Life at Viceroy</h3>
+        <p class="text-text-muted text-lg max-w-2xl mx-auto">Behind the scenes of our vibrant agency culture and the teams making it all happen.</p>
+      </div>
+      <!-- Placeholder for next section as per image structure -->
+      <div class="w-full h-64 bg-surface-container rounded-3xl border border-outline-variant/30 flex items-center justify-center shadow-lg shadow-black/20">
+         <a href="contact.html" class="bg-gradient-to-r from-gold-light to-gold-dark text-on-primary font-bold text-sm tracking-widest px-10 py-5 rounded-xl shadow-xl shadow-gold-dark/30 hover:scale-105 transition-all text-center">Enquire Now</a>
       </div>
     </div>
   </section>
@@ -445,11 +582,11 @@
       <div>
         <h4 class="font-bold text-xs tracking-widest text-white mb-6">SERVICES</h4>
         <ul class="space-y-3 text-sm text-text-muted">
-          <li><a href="services.html#digital" class="hover:text-gold-light transition-colors">Digital Marketing</a></li>
-          <li><a href="services.html#political" class="hover:text-gold-light transition-colors">Political Campaign Management</a></li>
-          <li><a href="services.html#documentary" class="hover:text-gold-light transition-colors">Documentary & Portfolio</a></li>
-          <li><a href="services.html#research" class="hover:text-gold-light transition-colors">Survey & Research</a></li>
-          <li><a href="services.html" class="hover:text-gold-light transition-colors">Lead Generation</a></li>
+          <li><a href="sernew.html#digital" class="hover:text-gold-light transition-colors">Digital Marketing</a></li>
+          <li><a href="sernew.html#political" class="hover:text-gold-light transition-colors">Political Campaign Management</a></li>
+          <li><a href="sernew.html#documentary" class="hover:text-gold-light transition-colors">Documentary & Portfolio</a></li>
+          <li><a href="sernew.html#research" class="hover:text-gold-light transition-colors">Survey & Research</a></li>
+          <li><a href="sernew.html" class="hover:text-gold-light transition-colors">Lead Generation</a></li>
         </ul>
       </div>
       <div>
@@ -514,7 +651,40 @@
     counters.forEach(counter => {
       counterObserver.observe(counter);
     });
+
+    // Auto-scroll Gallery
+    const gallery = document.getElementById('video-gallery-container');
+    if (gallery) {
+      window.isGalleryPlaying = false;
+      setInterval(() => {
+        if (window.isGalleryPlaying) return;
+        if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth - 10) {
+          gallery.scrollTo({left: 0, behavior: 'smooth'});
+        } else {
+          gallery.scrollBy({left: 320, behavior: 'smooth'});
+        }
+      }, 3000);
+    }
   });
+
+  function togglePlay(container) {
+    const video = container.querySelector('video');
+    if (video.paused) {
+      document.querySelectorAll('video').forEach(v => {
+        if(v !== video) {
+          v.pause();
+          v.parentElement.classList.remove('is-playing');
+        }
+      });
+      video.play();
+      container.classList.add('is-playing');
+      window.isGalleryPlaying = true;
+    } else {
+      video.pause();
+      container.classList.remove('is-playing');
+      window.isGalleryPlaying = false;
+    }
+  }
 </script>
 </body>
 </html>
